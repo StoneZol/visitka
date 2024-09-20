@@ -1,0 +1,65 @@
+:root{
+    --main-text-color: white;
+    --main-background-color: #000000;
+    --main-wall-background-color: #000000;
+}
+.GeneralPageBox{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;  /* Позволяет позиционировать дочерние элементы относительно родителя */
+    overflow: hidden; 
+}
+
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* pointer-events: none; */
+}
+
+.GeneralPage{
+width: 40%;
+min-width: 375px;
+display: flex;
+flex-direction: column;
+
+}
+.Users {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.animated-background video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    border: none;
+}
+
+.backgroundOriginal{
+    position: absolute;
+    bottom: 5%;
+}
+.backgroundOriginal a {
+    user-select: none;
+    font-size: 1.2em;
+    color: var(--main-text-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.LoadBreak{
+    width: 1px;
+    height: 1px;
+}
